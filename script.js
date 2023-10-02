@@ -6,7 +6,6 @@
 const color = document.getElementById('myColor');
 const text = document.getElementById('bodyText');
 
-document.getElementById('bodyText').textContent = document.getElementById('myColor').value;
 
 function changeColor(){
 // カラーコードを表示
@@ -23,5 +22,3 @@ function changeColor(){
 
 // カラーピッカーで色が選択されたらchangeColorを動作させる
 color.addEventListener('input', changeColor);
-
-text.textContent = color.value;
